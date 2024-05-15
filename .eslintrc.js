@@ -8,9 +8,9 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
-        camelcase: "error",
-        "func-call-spacing": "error",
-        "no-cond-assign": [
+        camelcase: "error", //enforce camelcase naming conventions
+        "func-call-spacing": "error", //avoid these: Function (args) // should be this: Function(args)
+        "no-cond-assign": [ //avoid assignments inside ifs
             "error",
             "always"
         ],
@@ -26,11 +26,11 @@ module.exports = {
             "error",
             "single"
         ],
-        "no-unused-vars": "off",
+        "no-unused-vars": "off", // ensure there are no variables that are not used
         "semi": [
             "error",
             "always"
         ],
-        "no-return-assign": "error"
+        "no-return-assign": "error" // a return statement cannot feature a variable assignment
     }
 };
