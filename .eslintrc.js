@@ -8,6 +8,8 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+        camelcase: "error",
+        "func-call-spacing": "error",
         "no-cond-assign": [
             "error",
             "always"
@@ -28,6 +30,16 @@ module.exports = {
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "no-unused-vars": [
+            "error",
+            {
+                vars: "all",
+                args: "after-used",
+                caughtErrors: "all"
+            }
+        ],
+        "no-use-before-define": "error",
+        "no-return-assign": "error"
     }
 };
