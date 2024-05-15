@@ -31,7 +31,6 @@ module.exports = {
             "error",
             "always"
         ],
-        "no-use-before-define": "error",
         "no-return-assign": "error"
     }
 };
