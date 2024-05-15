@@ -31,14 +31,6 @@ module.exports = {
             "error",
             "always"
         ],
-        "no-unused-vars": [
-            "error",
-            {
-                vars: "all",
-                args: "after-used",
-                caughtErrors: "all"
-            }
-        ],
         "no-use-before-define": "error",
         "no-return-assign": "error"
     }
